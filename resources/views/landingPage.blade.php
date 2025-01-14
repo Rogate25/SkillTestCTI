@@ -53,6 +53,7 @@
                     Overall, Sangfor Cyber Command is a powerful tool for businesses looking to strengthen their cybersecurity defenses and safeguard their assets from modern-day threats. </p>
             </div>
 
+       
             <section class="right-form">
                 <h1>Dapatkan Free Trial selama 1 bulan,</h1>
                 <span>analisa keamanan network anda dan lihat hasilnya!</span>
@@ -89,9 +90,9 @@
                         <label>Industry <span class="required">*</span></label>
                         <select id="dropdown">
                             <option value="" disabled selected>Select Industry</option>
-                            <option value="option1">Option 1</option>
-                            <option value="option2">Option 2</option>
-                            <option value="option3">Option 3</option>
+                            <option value="option1">IT</option>
+                            <option value="option2">Computer</option>
+                            <option value="option3">Network</option>
                         </select>
                     </div>
 
