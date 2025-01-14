@@ -57,38 +57,39 @@
             <section class="right-form">
                 <h1>Dapatkan Free Trial selama 1 bulan,</h1>
                 <span>analisa keamanan network anda dan lihat hasilnya!</span>
-                <form action="#">
+                <form action="{{ route('subscribe') }}" method="POST">
+                    @csrf
                     <div class="column">
                         <div class="input-box">
                             <label>First Name <span class="required">*</span></label>
-                            <input type="text" placeholder="First Name">
+                            <input name="firstName" type="text" placeholder="First Name">
                         </div>
 
                         <div class="input-box">
                             <label>Last Name <span class="required">*</span></label>
-                            <input type="text" placeholder="Last Name">
+                            <input name="LastName" type="text" placeholder="Last Name">
                         </div>
                     </div>
 
                     <div class="input-box">
                         <label>Corporate email <span class="required">*</span></label>
-                        <input type="text" placeholder="email@email.com">
+                        <input name="CorporateEmail" type="text" placeholder="email@email.com">
                     </div>
 
                     <div class="input-box">
                         <label>Job Title <span class="required">*</span></label>
-                        <input type="text" placeholder="Job Title">
+                        <input  name="JobTitle" type="text" placeholder="Job Title">
                     </div>
 
                     <div class="input-box">
                         <label>Company Name <span class="required">*</span></label>
-                        <input type="text" placeholder="Company Name">
+                        <input name="CompanyName" type="text" placeholder="Company Name">
                     </div>
 
 
                     <div class="input-box">
                         <label>Industry <span class="required">*</span></label>
-                        <select id="dropdown">
+                        <select id="dropdown" name="Industry">
                             <option value="" disabled selected>Select Industry</option>
                             <option value="option1">IT</option>
                             <option value="option2">Computer</option>
@@ -98,7 +99,7 @@
 
                     <div class="input-box">
                         <label>Phone number <span class="required">*</span></label>
-                        <input type="text" placeholder="Your number">
+                        <input name="PhoneNumber" type="text" placeholder="Your number">
                     </div>
 
                     <div class="checkbox-container">
@@ -108,9 +109,7 @@
                     </div>
             
                     <div class="button-container">
-                        <form action="{{ route('thank-you') }}" method="get">
                             <button type="submit" class="btn btn-primary">SEND</button>
-                        </form>
                     </div>
                     
                 </form>

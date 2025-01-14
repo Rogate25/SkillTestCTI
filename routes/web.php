@@ -8,13 +8,8 @@ Route::get('/', function () {
 });
 
 Route::get('/thank-you', function () {
-    return view('thank-you');
+    return view('thanks');
 })->name('thank-you');
-
-
-Route::get('/subscription/thankyou', function () {
-    return view('subscription.thankYou');
-})->name('subscription.thankYou');
 
 
 Route::post('/subscribe', [FormController::class, 'store'])->name('subscribe');
