@@ -108,8 +108,11 @@
                     </div>
             
                     <div class="button-container">
-                        <button type="submit" class="btn btn-primary">SEND</button>
+                        <form action="{{ route('thank-you') }}" method="get">
+                            <button type="submit" class="btn btn-primary">SEND</button>
+                        </form>
                     </div>
+                    
                 </form>
             </section> 
         </div>

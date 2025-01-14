@@ -7,9 +7,10 @@ Route::get('/', function () {
     return view('landingPage');
 });
 
-Route::get('/ThankYou', function () {
-    return view('thankYou');
-});
+Route::get('/thank-you', function () {
+    return view('thank-you');
+})->name('thank-you');
+
 
 Route::get('/subscription/thankyou', function () {
     return view('subscription.thankYou');
@@ -17,3 +18,6 @@ Route::get('/subscription/thankyou', function () {
 
 
 Route::post('/subscribe', [FormController::class, 'store'])->name('subscribe');
+
+
+
